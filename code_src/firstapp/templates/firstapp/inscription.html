@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+</head>
+<body style="height: fit-content;">
+
+    <div class="div_inscription">
+        <img src="img/PaxCodE__9_-removebg-preview.png" alt="" style="height: 50px;float: left;"> <br>
+        <h2 id="phrase_inscris_toi" style="color: #046380; "> <b>Inscris-toi</b> </h2>
+        <h4 id="phrase_inscription">Pour apprendre Python efficacement!</h4>
+
+        <label for="prenom" class="label_inscription">Prénom</label> <br>
+        <input type="text" id="prenom" class="input_inscription" autofocus required><br>
+        <br>
+        <br>
+        <label for="email" class="label_inscription">E-mail</label><br>
+        <input type="email" id="email" class="input_inscription" required><br>
+        <br>
+        <br>
+        <label for="passw" class="label_inscription">Mot de passe (8caractères minimum)</label><br>
+        <input type="text" id="passw" class="input_inscription" required><br>
+        <br>
+        <br>
+        <input type="submit" value="Je m'inscris" id="boutton_inscription">
+        <br>
+        <br>
+        <h4>Tu as déjà un compte?<a href="{% url 'firstapp:connexion' %}" target="_parent" title="aller à la pge de connexion">connecte-toi</a></h4>
+        <br>
+        <br>
+    </div>
+    <hr>
+    <!-- Footer -->
+    <div class="footer">
+        <img src="{% static 'img/paxcode_rev.png' %}" alt="">
+        <table id="tableau_footer">
+          <tr class="titre_tableau_footer">
+            <td class="item_f"> <a href="">Status</a> </td>
+            <td class="item_f"> <a href="">Termes et Conditions</a> </td>
+            <td class="item_f"> <a href="mailto:paxmulangi@gmail.com">Envoyer un mail</a></td>
+            <td class="item_f"> <a href="">Formations</a></td>
+          </tr>
+        </table>
+        <p> <b>Copyright © 2023 Paxcode v1.0.0</b></p>
+    </div>   
+</body>
+</html>

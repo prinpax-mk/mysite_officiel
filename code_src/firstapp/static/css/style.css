@@ -1,0 +1,370 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial;
+    margin: 0;
+    border: 0;
+    height: 100%;
+  }
+  
+  /* Header/logo Title */
+  .header { 
+    height: 400px;
+    width: 100%;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .lien{
+    color: red;
+
+  }
+  
+  #bouttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
+  #lien_connexion {
+    text-decoration: none;
+    background-color:#046380 ;
+    border: 2px solid #046380;
+    border-radius: 5px;
+    color: white;
+    padding: 8px;
+    margin-right: 3px;
+    
+  }
+  #lien_inscription{
+    text-decoration: none;
+    background-color:white;
+    border: 2px solid #046380;
+    border-radius: 5px;
+    color: #046380;
+    padding: 8px;
+    
+  }
+  
+  
+#lien_connexion:hover {
+    background-color: #17b9eb;
+  }
+  
+#lien_inscription:hover {
+    background-color: #17b9eb;
+    color: white;
+    
+  }
+  
+  /* Style the top navigation bar */
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #046380;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-right: 2px solid #0d8fb7;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #f3e684;
+    color: black;
+  }
+  
+  /* Column container */
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
+    background-color: white;
+    padding: 20px;
+    border-right: 4px solid #0d8fb7 ;
+    border-bottom: 4px solid #0d8fb7;
+  }
+  
+  /* Main column */
+  .main {
+    -webkit-box-flex: 70%;
+        -ms-flex: 70%;
+            flex: 70%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-bottom:4px solid  #ffe714 ;
+  }
+  
+  h2 {
+    color:#0d8fb7 ;
+  }
+  
+  /* Fake image, just for this example */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 0%;
+  }
+  
+  .titre_tableau {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding: 5px;
+    color: white;
+  }
+  
+  .item_g {
+    background-color: #ffe714;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+  }
+  
+  .item_d {
+    border-radius: 5px;
+    background-color: #73cce8;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: white;
+  }
+  
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row, .navbar {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+  /*# sourceMappingURL=style.css.map */
+  
+  /* CSS Page Connexion*/
+  
+  #boutton_connexion{
+  
+    background-color: #E8CC06;
+    padding: 5px;
+    width: 50%;
+    margin-left:25% ;
+    margin-right: 25%;
+    border: 2px solid #E8CC06;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+  }
+  
+  #boutton_connexion:hover{
+  
+    background-color: white;
+    border: 2px solid #E8CC06;
+    border-radius: 5px;
+    color: #046380;
+    
+  }
+  
+  .div_connexion{
+     text-align: center;
+     padding:auto;
+     height: auto;
+     width: 100%;
+     background-color:white ;
+     border-top: 2px solid #046380;
+     padding-left: 10px;
+     padding-right: 10px;
+  }
+  
+  .input_connexion{
+     margin-left: 20px;
+     width: 300px;
+     border: 2px solid #046380;
+     border-radius: 3px;
+  }
+  
+  .label_connexion{
+     color: #046380;
+     margin-left: 20px;
+  }
+  
+  .div_connexion h4 a{
+     color:#E8CC06 ;
+     text-decoration: none;
+  }
+  
+  .div_connexion h4{
+  
+     text-align: center;
+     color: rgb(211, 205, 205);
+     font-family: monospace;    
+  }
+  
+  .div_connexion h2{
+  
+     text-align: center;
+     padding-top: 45px;
+     color: white; }
+  
+   
+  
+  
+  .div_connexion h4 a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  } 
+  
+  
+  /* CSS Page Inscription */
+  
+  #boutton_inscription{
+  
+    background-color: #E8CC06;
+    padding: 5px;
+    width: 50%;
+    margin-left:25% ;
+    margin-right: 25%;
+    border: 2px solid #E8CC06;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+  }
+  
+  #boutton_inscription:hover{
+  
+    background-color: white;
+    border: 2px solid #E8CC06;
+    border-radius: 5px;
+    color: #046380;
+    
+  }
+  
+  .div_inscription{
+     text-align: center;
+     margin:0;
+     padding:auto;
+     height: auto;
+     width:100%;
+     background-color:white ;
+     border-top: 2px solid #046380;
+     
+  }
+  
+  .input_inscription{
+     margin-left: 20px;
+     width: 300px;
+     border: 2px solid #046380;
+     border-radius: 3px;
+  }
+  
+  .label_inscription{
+     color: #046380;
+     margin-left: 20px;
+  }
+  
+  .div_inscription h4 a{
+     color:#E8CC06 ;
+     text-decoration: none;
+  }
+  
+  .div_inscription h4{
+  
+     text-align: center;
+     color: rgb(211, 205, 205);
+     font-family: monospace;    
+  }
+  
+  .div_inscription h2{
+  
+     text-align: center;
+     padding-top: 45px;
+     color: white; }
+  
+  #phrase_inscris_toi{
+      font-family: monospace;
+      color:#046380 ;
+  }
+  #phrase_inscription{
+  
+      color: #E8CC06;
+  }
+  
+  .div_inscription h4 a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  } 
+  
+  /* Nos realisations */
+  
+  #main_realisation{
+    background-color:white;
+    width: 100%;
+    height: 300px;  
+    padding-left: 20px;
+  }
+  
+  #tableau_realisation{
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+  }  
+
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    background-color:white;
+    width: 100%;
+    height: 200px;
+    
+
+    
+  }
+
+  #tableau_footer{
+    align-items: center;
+    align-content: center;
+    width: 100%;
+  
+  } 
+
+.titre_tableau_footer{
+
+    width: 900px;
+ }
+
+  .item_f a{
+    color:#73cce8 ; 
+ }
+ 
+  
+  

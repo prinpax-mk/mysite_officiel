@@ -1,0 +1,161 @@
+{% load static %}
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PaxCodE</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+  <img src="{% static 'img/paxcode_rev.png' %}" alt="my logo" style="height: 90px;">
+  <h1 style="color:#046380;"><u style="color:#ffe714 ;">B</u>ienvenue</h1>
+  <p style="color: #046380;">Dans l'univers <b>Python</b> avec <b style="color:#ffe714 ;"> Paxcode. </style=> </b> </p>
+  <p style="background-color: white;border: 2px solid #ffe714 ;border-radius: 5px;padding: 3px;"> <b> "Vous y entrez zéro et vous y sortez Héro !!!" </b> </p>
+  <div id="bouttons">
+    <a classe="lien" id="lien_connexion" href="{% url 'firstapp:connexion' %}" target="_parent">Se connecter</a>
+    <a classe="lien" id="lien_inscription" href="{% url 'firstapp:inscription' %}" target="_parent">S'inscrire</a>
+    
+  </div>
+</div>
+
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#">Acceuil</a>
+  <a href="#">Formateur</a>
+  <a href="#">Présentation</a>
+  <a href="contact">Contacts</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2>Formateur</h2>
+    <h5>@Pax Mulangi</h5>
+    <div class="fakeimg" style=""></div>
+    <img src="{% static 'img/my_picture.jpg' %}" alt="my_pic" style="height:200px;width:auto;border-radius: 10px;">
+    <p> <b>Developpeur freelance, </b><br>Etudiant à l'université Protestante de Lubumbashi en RDCongo. <br>
+       Prinpax, connus sur son pseudonyme Pax,fait son premier cycle en Ingénierie Système d'Informations, (ISI) <br>
+       il batit sa carrière dans le developpement et la Data,il se spécialise dans un seul langage de programmation qui est le <b>python</b>, 
+       grace à ce dernier, il peut travailler dans la multitude des technologies comme <br>
+        <i>le Web, le Desktop, le Mobile et la Data...</i>  <br>
+       Actuellement, <b> formateur professionnel</b> et <br>
+       <b>accompagnateur </b>des étudiants dans le developpement.
+    </p>
+    <h2>Contacts</h2>
+    <h5>Disponible 24H/24</h5>
+    <table>
+        <tr class="titre_tableau">
+            <td class="item_g">Tel/Whatssap</td>
+            <td class="item_d">+243 976944648</td>
+           
+        </tr>
+        <tr class="titre_tableau">
+            <td class="item_g">Youtube</td>
+            <td class="item_d">PaxCodE</td>
+            
+
+        </tr>
+        <tr class="titre_tableau">
+            <td class="item_g">Kindelin</td>
+            <td class="item_d">Prinpax mk</td>
+        
+
+        </tr>
+        <tr class="titre_tableau">
+            <td class="item_g">E-mail</td>
+            <td class="item_d">paxmulangi@gmail.com</td>
+
+        </tr>
+        <tr class="titre_tableau">
+            <td class="item_g">Facebook</td>
+            <td class="item_d">Prinpax Mulangi</td>
+           
+        </tr>
+        
+    </table>
+  </div>
+  <div class="main">
+    <h2>Présentation</h2>
+    <h5>PaxCodE : Description</h5>
+    <video src="3 MINUTES Pour Transformer Ta VIE ｜ H5 Motivation [W_rMPy-hG3c].mp4" style="height: 200px;width: auto;"></video>
+    <p style="background-color:white; border-radius: 10px; padding: 5px;opacity: 0.9;color: black;">PaxCodE, est une plate forme de formation en Langage de programmation Python uniquement avec toutes ses frameworks... <br>
+      La dite plate forme a été crée par un étudiant de l'Université Protestante de Lubumbashi(En RDC).Voyant la hausse de lademande et l'utilité de ce langage, il décide de mettre en place cette plateforme qui est à 95% gratuit, <br>
+      pour permettre aux étudiants et aux particuliers d'Afrique et partout ailleurs d'apprendre et de maitriser le langage python, afin que ce dernier leurs permettent de réaliser tout leurs projets de developpement (Web-Mobile-Desktop-IA-Analyse des Données etc.) <br>
+      La plateforme a un réseau de partenaire: des personnes morales comme des personnes physiques. qui soutiennent ce projet.
+   
+    </p>
+    <h2>Compétences</h2>
+    <h5>Notre maitrise des Techs.</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Je certifie sur mon honneur que les compétences ci-dessus sont exactes !</ci-dessus></p>
+  </div>
+</div>
+
+<div id="main_realisation">
+    <h2>Réalisations</h2>
+    <h5>Nos grandes réalisations.</h5>
+    <table id="tableau_realisation">
+      <tr class="titre_tableau">
+          <td class="item_g">App Web</td>
+          <td class="item_d">+243 976944648</td>
+          <td class="item_g">+243 976944648</td>
+          
+         
+      </tr>
+      <tr class="titre_tableau">
+          <td class="item_g">App Desk</td>
+          <td class="item_d">PaxCodE</td>
+          <td class="item_g">+243 976944648</td>
+          
+
+      </tr>
+      <tr class="titre_tableau">
+          <td class="item_g">App Mobile</td>
+          <td class="item_d">Prinpax mk</td>
+          <td class="item_g">+243 976944648</td>
+      
+
+      </tr>
+      <tr class="titre_tableau">
+          <td class="item_g">Site Web</td>
+          <td class="item_d">paxmulangi@gmail.com</td>
+          <td class="item_g">+243 976944648</td>
+
+      </tr>
+      <tr class="titre_tableau">
+          <td class="item_g">S.I</td>
+          <td class="item_d">Prinpax Mulangi</td>
+          <td class="item_g">+243 976944648</td>
+         
+      </tr>
+      
+  </table>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <hr>
+  <img src="{% static 'img/paxcode_rev.png' %}" alt="">
+  <table id="tableau_footer">
+    <tr class="titre_tableau_footer">
+        <td class="item_f"> <a href="">Status</a> </td>
+        <td class="item_f"> <a href="">Termes et Conditions</a> </td>
+        <td class="item_f"> <a href="mailto:paxmulangi@gmail.com">Envoyer un mail</a></td>
+        <td class="item_f"> <a href="">Formations</a></td>
+    </tr>
+</table>
+<p> <b>Copyright © 2023 Paxcode v1.0.0</b></p>
+</div>
+
+</body>
+</html>
+
+
